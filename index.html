@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberOps Associate (Version 1.0) - Final Course Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+        .check-button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .check-button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .explanation {
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+			display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CyberOps Associate (Version 1.0) - Final Course Exam</h1>
+
+    <!-- Question 1 -->
+    <div class="question" id="q1">
+        <h3>Question 1</h3>
+        <p>Which two statements are characteristics of a virus? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q1" value="A"> A. A virus typically requires end-user activation.</label>
+            <label><input type="checkbox" name="q1" value="B"> B. A virus can be dormant and then activate at a specific time or date.</label>
+            <label><input type="checkbox" name="q1" value="C"> C. A virus replicates itself by independently exploiting vulnerabilities in networks.</label>
+            <label><input type="checkbox" name="q1" value="D"> D. A virus has an enabling vulnerability, a propagation mechanism, and a payload.</label>
+            <label><input type="checkbox" name="q1" value="E"> E. A virus provides the attacker with sensitive data, such as passwords.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q1', ['A', 'B'])">Check Answer</button>
+        <div class="result" id="result-q1"></div>
+        <div class="explanation">Explanation: The type of end-user interaction required to launch a virus is typically opening an application, a webpage, or powering on the computer. Once activated, a virus can infect other files located on the computer or other computers on the same network.</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question" id="q2">
+        <h3>Question 2</h3>
+        <p>What is a characteristic of a Trojan horse as it relates to network security?</p>
+        <div class="options">
+            <label><input type="radio" name="q2" value="A"> A. Too much information is destined for a particular memory block, causing additional memory areas to be affected.</label>
+            <label><input type="radio" name="q2" value="B"> B. Extreme amounts of data are sent to a particular network device interface.</label>
+            <label><input type="radio" name="q2" value="C"> C. An electronic dictionary is used to obtain a password to be used to infiltrate a key network device.</label>
+            <label><input type="radio" name="q2" value="D"> D. Malware is contained in a seemingly legitimate executable program.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q2', ['D'])">Check Answer</button>
+        <div class="result" id="result-q2"></div>
+        <div class="explanation">Explanation: A Trojan horse carries out malicious operations under the guise of a legitimate program. Denial of service attacks send extreme amounts of data to a particular host or network device interface. Password attacks use electronic dictionaries in an attempt to learn passwords. Buffer overflow attacks exploit memory buffers by sending too much information to a host to render the system inoperable.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question" id="q3">
+        <h3>Question 3</h3>
+        <p>Which technique is used in social engineering attacks?</p>
+        <div class="options">
+            <label><input type="radio" name="q3" value="A"> A. Sending junk email</label>
+            <label><input type="radio" name="q3" value="B"> B. Buffer overflow</label>
+            <label><input type="radio" name="q3" value="C"> C. Phishing</label>
+            <label><input type="radio" name="q3" value="D"> D. Man-in-the-middle</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q3', ['C'])">Check Answer</button>
+        <div class="result" id="result-q3"></div>
+        <div class="explanation">Explanation: A threat actor sends a fraudulent email disguised as a legitimate, trusted source to trick the recipient into installing malware on their device or sharing personal or financial information.</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question" id="q4">
+        <h3>Question 4</h3>
+        <p>What is the purpose of implementing VLANs in a network?</p>
+        <div class="options">
+            <label><input type="radio" name="q4" value="A"> A. They can separate user traffic.</label>
+            <label><input type="radio" name="q4" value="B"> B. They prevent Layer 2 loops.</label>
+            <label><input type="radio" name="q4" value="C"> C. They eliminate network collisions.</label>
+            <label><input type="radio" name="q4" value="D"> D. They allow switches to forward Layer 3 packets without a router.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q4', ['A'])">Check Answer</button>
+        <div class="result" id="result-q4"></div>
+        <div class="explanation">Explanation: VLANs are used in a network to separate user traffic based on factors such as function, project team, or application, without regard to the physical location of the user or device.</div>
+    </div>
+
+    <!-- Question 5 (To be integrated later) -->
+    <div class="question" id="q5">
+        <h3>Question 5</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 6 (To be integrated later) -->
+    <div class="question" id="q6">
+        <h3>Question 6</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 7 (To be integrated later) -->
+    <div class="question" id="q7">
+        <h3>Question 7</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question" id="q8">
+        <h3>Question 8</h3>
+        <p>In network security assessments, what type of test is used to assess the risk posed by vulnerabilities to a specific organization, including the assessment of the likelihood of attacks and the impact of successful exploits on the organization?</p>
+        <div class="options">
+            <label><input type="radio" name="q8" value="A"> A. Port scanning</label>
+            <label><input type="radio" name="q8" value="B"> B. Risk analysis</label>
+            <label><input type="radio" name="q8" value="C"> C. Penetration testing</label>
+            <label><input type="radio" name="q8" value="D"> D. Vulnerability assessment</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q8', ['B'])">Check Answer</button>
+        <div class="result" id="result-q8"></div>
+        <div class="explanation">Explanation: A risk analysis includes assessing the likelihood of attacks, identifying likely threat actors, and evaluating the impact of successful exploits on the organization.</div>
+    </div>
+
+    <!-- Question 9 (To be integrated later) -->
+    <div class="question" id="q9">
+        <h3>Question 9</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question" id="q10">
+        <h3>Question 10</h3>
+        <p>When addressing an identified risk, which strategy aims to transfer some of the risk to other parties?</p>
+        <div class="options">
+            <label><input type="radio" name="q10" value="A"> A. Risk avoidance</label>
+            <label><input type="radio" name="q10" value="B"> B. Risk sharing</label>
+            <label><input type="radio" name="q10" value="C"> C. Risk retention</label>
+            <label><input type="radio" name="q10" value="D"> D. Risk reduction</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q10', ['B'])">Check Answer</button>
+        <div class="result" id="result-q10"></div>
+        <div class="explanation">Explanation: There are four potential strategies for responding to identified risks: Risk avoidance: ceasing activities that create risk. Risk reduction: decreasing risk by taking measures to reduce vulnerability. Risk sharing: transferring some of the risk to other parties. Risk retention: accepting the risk and its consequences.</div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question" id="q11">
+        <h3>Question 11</h3>
+        <p>What is a network tap?</p>
+        <div class="options">
+            <label><input type="radio" name="q11" value="A"> A. A technology used to provide real-time reporting and long-term analysis of security events</label>
+            <label><input type="radio" name="q11" value="B"> B. A Cisco technology that provides statistics about packets flowing through a router or multilayer switch</label>
+            <label><input type="radio" name="q11" value="C"> C. A feature supported on Cisco switches that allows the switch to copy frames and forward them to an analysis device</label>
+            <label><input type="radio" name="q11" value="D"> D. A passive device that forwards all traffic and physical layer errors to an analysis device</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q11', ['D'])">Check Answer</button>
+        <div class="result" id="result-q11"></div>
+        <div class="explanation">Explanation: A network tap is used to capture traffic for monitoring the network. The tap is typically a passive splitting device implemented inline on the network and forwards all traffic, including physical layer errors, to an analysis device.</div>
+    </div>
+
+    <!-- Question 12 (To be integrated later) -->
+    <div class="question" id="q12">
+        <h3>Question 12</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question" id="q13">
+        <h3>Question 13</h3>
+        <p>If an SOC targets 99.999% uptime, how many minutes of downtime per year would be considered within its goal?</p>
+        <div class="options">
+            <label><input type="radio" name="q13" value="A"> A. Approximately 5 minutes per year</label>
+            <label><input type="radio" name="q13" value="B"> B. Approximately 10 minutes per year</label>
+            <label><input type="radio" name="q13" value="C"> C. Approximately 20 minutes per year</label>
+            <label><input type="radio" name="q13" value="D"> D. Approximately 30 minutes per year</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q13', ['A'])">Check Answer</button>
+        <div class="result" id="result-q13"></div>
+        <div class="explanation">Explanation: In a year, there are 365 days x 24 hours per day x 60 minutes per hour = 525,600 minutes. With a target uptime of 99.999%, downtime must be controlled below 525,600 x (1-0.99999) = 5.256 minutes per year.</div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question" id="q14">
+        <h3>Question 14</h3>
+        <p>The HTTP server has responded to a client request with a status code of 200. What does this status code indicate?</p>
+        <div class="options">
+            <label><input type="radio" name="q14" value="A"> A. The server understands the request, but the resource will not be fulfilled.</label>
+            <label><input type="radio" name="q14" value="B"> B. The request was completed successfully.</label>
+            <label><input type="radio" name="q14" value="C"> C. The server could not find the requested resource, possibly due to an incorrect URL.</label>
+            <label><input type="radio" name="q14" value="D"> D. The request has been accepted for processing, but the processing is not complete.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q14', ['B'])">Check Answer</button>
+        <div class="result" id="result-q14"></div>
+        <div class="explanation">Explanation: The request was completed successfully.</div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question" id="q15">
+        <h3>Question 15</h3>
+        <p>What is an advantage for small organizations of adopting IMAP over POP?</p>
+        <div class="options">
+            <label><input type="radio" name="q15" value="A"> A. POP only allows the client to store messages centrally, while IMAP allows distributed storage.</label>
+            <label><input type="radio" name="q15" value="B"> B. IMAP sends and retrieves email, but POP only retrieves email.</label>
+            <label><input type="radio" name="q15" value="C"> C. When the user connects to a POP server, copies of messages are kept on the mail server for a short time, but IMAP keeps them for a long time.</label>
+            <label><input type="radio" name="q15" value="D"> D. Messages are kept on the mail servers until manually deleted from the email client.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q15', ['D'])">Check Answer</button>
+        <div class="result" id="result-q15"></div>
+        <div class="explanation">Explanation: IMAP and POP are protocols used to retrieve email messages. The advantage of using IMAP over POP is that when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application. IMAP then stores the email messages on the server until the user manually deletes those messages.</div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="question" id="q16">
+        <h3>Question 16</h3>
+        <p>What security debugging tool can black hats use to reverse-engineer binary files when writing exploits?</p>
+        <div class="options">
+            <label><input type="radio" name="q16" value="A"> A. WinDbg</label>
+            <label><input type="radio" name="q16" value="B"> B. Firesheep</label>
+            <label><input type="radio" name="q16" value="C"> C. Skipfish</label>
+            <label><input type="radio" name="q16" value="D"> D. AIDE</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q16', ['A'])">Check Answer</button>
+        <div class="result" id="result-q16"></div>
+        <div class="explanation">Explanation: WinDbg is a debugging tool that can be used for reverse engineering. </div>
+    </div>
+
+    <!-- Question 17 (To be integrated later) -->
+    <div class="question" id="q17">
+        <h3>Question 17</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="question" id="q18">
+        <h3>Question 18</h3>
+        <p>What are two characteristics of ARP? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q18" value="A"> A. When a host encapsulates a packet into a frame, it refers to the MAC address table to determine the mapping of IP addresses to MAC addresses.</label>
+            <label><input type="checkbox" name="q18" value="B"> B. If a host is ready to send a packet to a local destination device and has the IP address but not the MAC address of the destination, it generates an ARP broadcast.</label>
+            <label><input type="checkbox" name="q18" value="C"> C. If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.</label>
+            <label><input type="checkbox" name="q18" value="D"> D. If no device responds to the ARP request, the originating node will broadcast the data packet to all devices on the network segment.</label>
+            <label><input type="checkbox" name="q18" value="E"> E. An ARP request is sent to all devices on the Ethernet LAN and contains the IP address of the destination host and its multicast MAC address.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q18', ['B', 'C'])">Check Answer</button>
+        <div class="result" id="result-q18"></div>
+        <div class="explanation">Explanation: When a node encapsulates a data packet into a frame, it needs the destination MAC address. It first determines whether the destination device is on the local network or a remote network. It then checks the ARP table (not the MAC table) to see if there is a pair of IP and MAC addresses for the destination IP address (if the destination host is on the local network) or the default gateway IP address (if the destination host is on a remote network). If the match does not exist, it generates an ARP broadcast to resolve the IP address to the MAC address. Because the destination MAC address is unknown, the ARP request is broadcast with the MAC address FFFF.FFFF.FFFF. The destination device or the default gateway will respond with its MAC address, allowing the sending node to assemble the frame. If no device responds to the ARP request, the originating node will discard the packet because a frame cannot be created. </div>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="question" id="q19">
+        <h3>Question 19</h3>
+        <p>What is a property of the ARP table on a device?</p>
+        <div class="options">
+            <label><input type="radio" name="q19" value="A"> A. Entries in an ARP table have a timestamp and are deleted after the timeout expires.</label>
+            <label><input type="radio" name="q19" value="B"> B. Every operating system uses the same timer to delete old entries from the ARP cache.</label>
+            <label><input type="radio" name="q19" value="C"> C. Static IP-to-MAC address entries are dynamically removed from the ARP table.</label>
+            <label><input type="radio" name="q19" value="D"> D. Windows operating systems store ARP cache entries for 3 minutes.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q19', ['A'])">Check Answer</button>
+        <div class="result" id="result-q19"></div>
+        <div class="explanation">Explanation: Entries in an ARP table have a timestamp and are deleted after the timeout expires. </div>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="question" id="q20">
+        <h3>Question 20</h3>
+        <p>What is the purpose of Tor?</p>
+        <div class="options">
+            <label><input type="radio" name="q20" value="A"> A. To allow users to browse the Internet anonymously</label>
+            <label><input type="radio" name="q20" value="B"> B. To securely connect to a remote network over an insecure link such as an Internet connection</label>
+            <label><input type="radio" name="q20" value="C"> C. To donate processor cycles to distributed computational tasks in a processor-sharing P2P network</label>
+            <label><input type="radio" name="q20" value="D"> D. To inspect incoming traffic and look for anything that violates a rule or matches the signature of a known exploit</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q20', ['A'])">Check Answer</button>
+        <div class="result" id="result-q20"></div>
+        <div class="explanation">Explanation: Tor is a software platform and a peer-to-peer (P2P) network of hosts that function as routers. Users access the Tor network via a special browser that allows them to browse anonymously. </div>
+    </div>
+
+    <!-- Question 21 -->
+    <div class="question" id="q21">
+        <h3>Question 21</h3>
+        <p>Which two network protocols can a threat actor use to exfiltrate data in traffic disguised as regular network traffic? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q21" value="A"> A. NTP</label>
+            <label><input type="checkbox" name="q21" value="B"> B. DNS</label>
+            <label><input type="checkbox" name="q21" value="C"> C. HTTP</label>
+            <label><input type="checkbox" name="q21" value="D"> D. Syslog</label>
+            <label><input type="checkbox" name="q21" value="E"> E. SMTP</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q21', ['B', 'C'])">Check Answer</button>
+        <div class="result" id="result-q21"></div>
+        <div class="explanation">Explanation: Protocols such as DNS, HTTP, and SMTP can be used to exfiltrate data. </div>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question" id="q22">
+        <h3>Question 22</h3>
+        <p>What is a key difference between data captured by NetFlow and data captured by Wireshark?</p>
+        <div class="options">
+            <label><input type="radio" name="q22" value="A"> A. NetFlow data shows the content of the network flow, while Wireshark data shows network flow statistics.</label>
+            <label><input type="radio" name="q22" value="B"> B. NetFlow data is analyzed by tcpdump, while Wireshark data is analyzed by nfdump.</label>
+            <label><input type="radio" name="q22" value="C"> C. NetFlow provides transaction data, while Wireshark provides session data.</label>
+            <label><input type="radio" name="q22" value="D"> D. NetFlow collects metadata of a network flow, while Wireshark captures complete data packets.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q22', ['D'])">Check Answer</button>
+        <div class="result" id="result-q22"></div>
+        <div class="explanation">Explanation: Wireshark captures the complete content of a packet. NetFlow does not. Instead, NetFlow collects metadata, or data about the flow. </div>
+    </div>
+
+    <!-- Question 23 -->
+    <div class="question" id="q23">
+        <h3>Question 23</h3>
+        <p>Which tool captures complete data packets with a command-line interface only?</p>
+        <div class="options">
+            <label><input type="radio" name="q23" value="A"> A. nfdump</label>
+            <label><input type="radio" name="q23" value="B"> B. Wireshark</label>
+            <label><input type="radio" name="q23" value="C"> C. NBAR2</label>
+            <label><input type="radio" name="q23" value="D"> D. tcpdump</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q23', ['D'])">Check Answer</button>
+        <div class="result" id="result-q23"></div>
+        <div class="explanation">Explanation: The command-line tool tcpdump is a packet analyzer. Wireshark is a packet analyzer with a GUI interface. </div>
+    </div>
+
+    <!-- Question 24 -->
+    <div class="question" id="q24">
+        <h3>Question 24</h3>
+        <p>Which method can be used to harden a device?</p>
+        <div class="options">
+            <label><input type="radio" name="q24" value="A"> A. Maintain the use of the same passwords</label>
+            <label><input type="radio" name="q24" value="B"> B. Allow default services to remain enabled</label>
+            <label><input type="radio" name="q24" value="C"> C. Allow USB auto-detection</label>
+            <label><input type="radio" name="q24" value="D"> D. Use SSH and disable root account access via SSH</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q24', ['D'])">Check Answer</button>
+        <div class="result" id="result-q24"></div>
+        <div class="explanation">Explanation: Basic best practices for device hardening include: Ensuring physical security, Minimizing installed packages, Disabling unused services, Using SSH and disabling root account login via SSH, Keeping the system updated, Disabling USB auto-detection, Enforcing strong passwords, Forcing periodic password changes, Preventing users from reusing old passwords, Reviewing logs regularly. </div>
+    </div>
+
+    <!-- Question 25 -->
+    <div class="question" id="q25">
+        <h3>Question 25</h3>
+        <p>In a Linux operating system, which component interprets user commands and attempts to execute them?</p>
+        <div class="options">
+            <label><input type="radio" name="q25" value="A"> A. GUI</label>
+            <label><input type="radio" name="q25" value="B"> B. Daemon</label>
+            <label><input type="radio" name="q25" value="C"> C. Kernel</label>
+            <label><input type="radio" name="q25" value="D"> D. Shell</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q25', ['D'])">Check Answer</button>
+        <div class="result" id="result-q25"></div>
+        <div class="explanation">Explanation: In a Linux operating system, the shell is a component of the operating system that interprets user commands and attempts to execute them. </div>
+    </div>
+
+    <!-- Question 26 -->
+    <div class="question" id="q26">
+        <h3>Question 26</h3>
+        <p>A network administrator is configuring an AAA server to manage RADIUS authentication. Which two features are included in RADIUS authentication? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q26" value="A"> A. Encryption for all communications</label>
+            <label><input type="checkbox" name="q26" value="B"> B. Encryption only for data</label>
+            <label><input type="checkbox" name="q26" value="C"> C. Single process for authentication and authorization</label>
+            <label><input type="checkbox" name="q26" value="D"> D. Separate processes for authentication and authorization</label>
+            <label><input type="checkbox" name="q26" value="E"> E. Hidden passwords during transmission</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q26', ['C', 'E'])">Check Answer</button>
+        <div class="result" id="result-q26"></div>
+        <div class="explanation">Explanation: RADIUS authentication supports the following features: RADIUS authentication and authorization as a single process, Encrypts only the password, Uses UDP, Supports remote access technologies, 802.1X, and Session Initiation Protocol (SIP). </div>
+    </div>
+
+    <!-- Question 27 -->
+    <div class="question" id="q27">
+        <h3>Question 27</h3>
+        <p>What is privilege escalation?</p>
+        <div class="options">
+            <label><input type="radio" name="q27" value="A"> A. Vulnerabilities are exploited in systems to grant higher levels of privilege than someone or some process should have.</label>
+            <label><input type="radio" name="q27" value="B"> B. Everyone is granted full rights by default to everything, and rights are removed only when someone abuses the privileges.</label>
+            <label><input type="radio" name="q27" value="C"> C. Someone is granted rights because they have received a promotion.</label>
+            <label><input type="radio" name="q27" value="D"> D. A security issue occurs when senior corporate officials demand rights to systems or files they should not have.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q27', ['A'])">Check Answer</button>
+        <div class="result" id="result-q27"></div>
+        <div class="explanation">Explanation: With privilege escalation, vulnerabilities are exploited to grant higher levels of privilege. After the privilege is granted, the threat actor can access sensitive information or take control of the system. </div>
+    </div>
+
+    <!-- Question 28 -->
+    <div class="question" id="q28">
+        <h3>Question 28</h3>
+        <p>Which two assurances does digital signing provide about code downloaded from the Internet? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q28" value="A"> A. The code contains no viruses.</label>
+            <label><input type="checkbox" name="q28" value="B"> B. The code has not been modified since it left the software publisher.</label>
+            <label><input type="checkbox" name="q28" value="C"> C. The code is authentic and actually comes from the publisher.</label>
+            <label><input type="checkbox" name="q28" value="D"> D. The code contains no errors.</label>
+            <label><input type="checkbox" name="q28" value="E"> E. The code was encrypted with a private key and a public key.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q28', ['B', 'C'])">Check Answer</button>
+        <div class="result" id="result-q28"></div>
+        <div class="explanation">Explanation: Digital signing of code provides several assurances about the code: The code is authentic and actually comes from the publisher. The code has not been modified since it left the software publisher. The publisher undeniably published the code. This provides non-repudiation of the act of publishing. </div>
+    </div>
+
+    <!-- Question 29 -->
+    <div class="question" id="q29">
+        <h3>Question 29</h3>
+        <p>An IT company recommends the use of PKI applications to securely exchange information between employees. In which two instances might an organization use PKI applications to securely exchange information between users? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q29" value="A"> A. HTTPS web service</label>
+            <label><input type="checkbox" name="q29" value="B"> B. 802.1x authentication</label>
+            <label><input type="checkbox" name="q29" value="C"> C. Local NTP server</label>
+            <label><input type="checkbox" name="q29" value="D"> D. FTP transfers</label>
+            <label><input type="checkbox" name="q29" value="E"> E. File and directory access permission</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q29', ['A', 'B'])">Check Answer</button>
+        <div class="result" id="result-q29"></div>
+        <div class="explanation">Explanation: Public Key Infrastructure (PKI) is a system of third parties known as certificate authorities or CAs. PKI is the framework used to securely exchange information between parties. Common PKI applications include: SSL/TLS certificate-based peer authentication, Secure network traffic using IPsec VPN, HTTPS web traffic, Network access control using 802.1x authentication, Secure email using the S/MIME protocol, Secure instant messaging, Approving and authorizing applications with code signing, Protecting user data with the Encrypting File System (EFS), Implementing two-factor authentication with smart cards, Securing USB storage devices. </div>
+    </div>
+
+    <!-- Question 30 -->
+    <div class="question" id="q30">
+        <h3>Question 30</h3>
+        <p>What measure can a security analyst take to perform effective security monitoring against network traffic encrypted by SSL technology?</p>
+        <div class="options">
+            <label><input type="radio" name="q30" value="A"> A. Use a Syslog server to capture network traffic.</label>
+            <label><input type="radio" name="q30" value="B"> B. Deploy a Cisco SSL appliance.</label>
+            <label><input type="radio" name="q30" value="C"> C. Require remote access connections via IPsec VPN.</label>
+            <label><input type="radio" name="q30" value="D"> D. Deploy a Cisco ASA.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q30', ['B'])">Check Answer</button>
+        <div class="result" id="result-q30"></div>
+        <div class="explanation">Explanation: Deploy a Cisco SSL appliance to decrypt SSL traffic and send it to Intrusion Prevention System (IPS) devices to identify risks typically hidden by SSL. </div>
+    </div>
+
+    <!-- Question 31 -->
+    <div class="question" id="q31">
+        <h3>Question 31</h3>
+        <p>An administrator is attempting to develop a BYOD security policy for employees who bring a wide range of devices to connect to the company network. Which three objectives must the BYOD security policy address? (Choose three.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q31" value="A"> A. All devices must be insured against liability if used to compromise the corporate network.</label>
+            <label><input type="checkbox" name="q31" value="B"> B. All devices must have open authentication with the corporate network.</label>
+            <label><input type="checkbox" name="q31" value="C"> C. The rights and activities permitted on the corporate network must be defined.</label>
+            <label><input type="checkbox" name="q31" value="D"> D. Safeguards must be established for any personal device that is compromised.</label>
+            <label><input type="checkbox" name="q31" value="E"> E. The level of access for employees when connecting to the corporate network must be defined.</label>
+            <label><input type="checkbox" name="q31" value="F"> F. All devices must be allowed to connect to the corporate network seamlessly.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q31', ['C', 'D', 'E'])">Check Answer</button>
+        <div class="result" id="result-q31"></div>
+        <div class="explanation">Explanation: The objectives of a BYOD security policy are to define the rights and activities permitted on the corporate network, define the level of access for employees when connecting to the corporate network, and establish safeguards for any personal device that is compromised. </div>
+    </div>
+
+    <!-- Question 32 (To be integrated later) -->
+    <div class="question" id="q32">
+        <h3>Question 32</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 33 (To be integrated later) -->
+    <div class="question" id="q33">
+        <h3>Question 33</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 34 -->
+    <div class="question" id="q34">
+        <h3>Question 34</h3>
+        <p>What type of attack targets an SQL database using a user’s input field?</p>
+        <div class="options">
+            <label><input type="radio" name="q34" value="A"> A. XML injection</label>
+            <label><input type="radio" name="q34" value="B"> B. Buffer overflow</label>
+            <label><input type="radio" name="q34" value="C"> C. Cross-site scripting</label>
+            <label><input type="radio" name="q34" value="D"> D. SQL injection</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q34', ['D'])">Check Answer</button>
+        <div class="result" id="result-q34"></div>
+        <div class="explanation">Explanation: A criminal can insert a malicious SQL statement into an entry field on a website where the system does not properly filter user input. </div>
+    </div>
+
+    <!-- Question 35 -->
+    <div class="question" id="q35">
+        <h3>Question 35</h3>
+        <p>Which are two characteristics of Ethernet MAC addresses? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q35" value="A"> A. MAC addresses use a flexible hierarchical structure.</label>
+            <label><input type="checkbox" name="q35" value="B"> B. They are expressed as 12 hexadecimal digits.</label>
+            <label><input type="checkbox" name="q35" value="C"> C. They are globally unique.</label>
+            <label><input type="checkbox" name="q35" value="D"> D. They are routable on the Internet.</label>
+            <label><input type="checkbox" name="q35" value="E"> E. MAC addresses must be unique for both Ethernet and serial interfaces on a device.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q35', ['B', 'C'])">Check Answer</button>
+        <div class="result" id="result-q35"></div>
+        <div class="explanation">Explanation: An Ethernet MAC address is a 48-bit binary value expressed as 12 hexadecimal digits. MAC addresses must be globally unique by design. MAC addresses are in a flat structure and thus are not routable on the Internet. Serial interfaces do not use MAC addresses. </div>
+    </div>
+
+    <!-- Question 36 -->
+    <div class="question" id="q36">
+        <h3>Question 36</h3>
+        <p>A user calls to report that a PC cannot access the Internet. The network technician asks the user to issue the command <code>ping 127.0.0.1</code> in a command prompt window. The user reports that the result is four positive replies. What conclusion can be drawn from this connectivity test?</p>
+        <div class="options">
+            <label><input type="radio" name="q36" value="A"> A. The IP address obtained from the DHCP server is correct.</label>
+            <label><input type="radio" name="q36" value="B"> B. The PC can access the network. The issue exists beyond the local network.</label>
+            <label><input type="radio" name="q36" value="C"> C. The PC can access the Internet. However, the web browser may not be functioning.</label>
+            <label><input type="radio" name="q36" value="D"> D. The TCP/IP implementation is functional.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q36', ['D'])">Check Answer</button>
+        <div class="result" id="result-q36"></div>
+        <div class="explanation">Explanation: The <code>ping 127.0.0.1</code> command is used to verify that the TCP/IP stack is functional. It verifies the correct operation of the protocol stack from the network layer to the physical layer without sending a signal to the medium. In other words, this test does not go beyond the PC itself. For example, it does not detect whether a cable is connected to the PC. </div>
+    </div>
+
+    <!-- Question 37 -->
+    <div class="question" id="q37">
+        <h3>Question 37</h3>
+        <p>What characterizes a threat actor?</p>
+        <div class="options">
+            <label><input type="radio" name="q37" value="A"> A. They are all highly skilled individuals.</label>
+            <label><input type="radio" name="q37" value="B"> B. They always use advanced tools to launch attacks.</label>
+            <label><input type="radio" name="q37" value="C"> C. They always attempt to cause some harm to an individual or organization.</label>
+            <label><input type="radio" name="q37" value="D"> D. They all belong to organized crime.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q37', ['C'])">Check Answer</button>
+        <div class="result" id="result-q37"></div>
+        <div class="explanation">Explanation: A threat actor always attempts to cause some type of harm to a person or organization. </div>
+    </div>
+
+    <!-- Question 38 -->
+    <div class="question" id="q38">
+        <h3>Question 38</h3>
+        <p>A computer is presenting a user with a screen requesting payment before the user can access the user’s data. What type of malware is this?</p>
+        <div class="options">
+            <label><input type="radio" name="q38" value="A"> A. A type of logic bomb</label>
+            <label><input type="radio" name="q38" value="B"> B. A type of virus</label>
+            <label><input type="radio" name="q38" value="C"> C. A type of worm</label>
+            <label><input type="radio" name="q38" value="D"> D. A type of ransomware</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q38', ['D'])">Check Answer</button>
+        <div class="result" id="result-q38"></div>
+        <div class="explanation">Explanation: Ransomware commonly encrypts data on a computer and makes it inaccessible until the computer user pays a specific sum of money. </div>
+    </div>
+
+    <!-- Question 39 -->
+    <div class="question" id="q39">
+        <h3>Question 39</h3>
+        <p>What type of ICMPv6 message provides network addressing information to hosts using SLAAC?</p>
+        <div class="options">
+            <label><input type="radio" name="q39" value="A"> A. Router solicitation</label>
+            <label><input type="radio" name="q39" value="B"> B. Neighbor advertisement</label>
+            <label><input type="radio" name="q39" value="C"> C. Neighbor solicitation</label>
+            <label><input type="radio" name="q39" value="D"> D. Router advertisement</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q39', ['D'])">Check Answer</button>
+        <div class="result" id="result-q39"></div>
+        <div class="explanation">Explanation: IPv6-enabled router interfaces send periodic router advertisement messages that provide addressing information to hosts performing SLAAC. </div>
+    </div>
+
+    <!-- Question 40 -->
+    <div class="question" id="q40">
+        <h3>Question 40</h3>
+        <p>Which tool included in Security Onion is a series of software plugins that send different types of data to Elasticsearch data stores?</p>
+        <div class="options">
+            <label><input type="radio" name="q40" value="A"> A. Curator</label>
+            <label><input type="radio" name="q40" value="B"> B. Beats</label>
+            <label><input type="radio" name="q40" value="C"> C. OSSEC</label>
+            <label><input type="radio" name="q40" value="D"> D. ElastAlert</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q40', ['B'])">Check Answer</button>
+        <div class="result" id="result-q40"></div>
+        <div class="explanation">Explanation: Beats is a series of software plugins that send data to Elasticsearch. </div>
+    </div>
+
+    <!-- Question 41 -->
+    <div class="question" id="q41">
+        <h3>Question 41</h3>
+        <p>Which two types of unreadable network traffic could be eliminated from data collected by NSM? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q41" value="A"> A. STP traffic</label>
+            <label><input type="checkbox" name="q41" value="B"> B. IPsec traffic</label>
+            <label><input type="checkbox" name="q41" value="C"> C. Routing update traffic</label>
+            <label><input type="checkbox" name="q41" value="D"> D. SSL traffic</label>
+            <label><input type="checkbox" name="q41" value="E"> E. Broadcast traffic</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q41', ['B', 'D'])">Check Answer</button>
+        <div class="result" id="result-q41"></div>
+        <div class="explanation">Explanation: To reduce the large amount of data collected so that cybersecurity analysts can focus on critical threats, some less important or unusable data could be eliminated from the datasets. For example, encrypted data, such as IPsec and SSL traffic, could be eliminated because it is unreadable in a reasonable timeframe. </div>
+    </div>
+
+    <!-- Question 42 -->
+    <div class="question" id="q42">
+        <h3>Question 42</h3>
+        <p>Which major open-source component of Elastic Stack is responsible for accepting data in its native format and making the data elements consistent across all sources?</p>
+        <div class="options">
+            <label><input type="radio" name="q42" value="A"> A. Logstash</label>
+            <label><input type="radio" name="q42" value="B"> B. Kibana</label>
+            <label><input type="radio" name="q42" value="C"> C. Beats</label>
+            <label><input type="radio" name="q42" value="D"> D. Elasticsearch</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q42', ['A'])">Check Answer</button>
+        <div class="result" id="result-q42"></div>
+        <div class="explanation">Explanation: Logstash is responsible for accepting data in its native format and making the data elements consistent across all sources. </div>
+    </div>
+
+    <!-- Question 43 (To be integrated later) -->
+    <div class="question" id="q43">
+        <h3>Question 43</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 44 -->
+    <div class="question" id="q44">
+        <h3>Question 44</h3>
+        <p>In the NIST incident response process life cycle, what type of attack vector involves the use of brute force against devices, networks, or services?</p>
+        <div class="options">
+            <label><input type="radio" name="q44" value="A"> A. Media</label>
+            <label><input type="radio" name="q44" value="B"> B. Impersonation</label>
+            <label><input type="radio" name="q44" value="C"> C. Attrition</label>
+            <label><input type="radio" name="q44" value="D"> D. Loss or theft</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q44', ['C'])">Check Answer</button>
+        <div class="result" id="result-q44"></div>
+        <div class="explanation">Explanation: Attrition attacks are any attacks that use brute force. Common attack vectors include media, attrition, impersonation, and loss or theft. Media attacks are those initiated from storage devices. Impersonation attacks occur when something or someone is replaced for the purpose of the attack, and loss or theft attacks are initiated by equipment within the organization. </div>
+    </div>
+
+    <!-- Question 45 (To be integrated later) -->
+    <div class="question" id="q45">
+        <h3>Question 45</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 46 -->
+    <div class="question" id="q46">
+        <h3>Question 46</h3>
+        <p>What is a characteristic of CybOX?</p>
+        <div class="options">
+            <label><input type="radio" name="q46" value="A"> A. It is a set of standardized schemas for specifying, capturing, characterizing, and communicating events and properties of network operations.</label>
+            <label><input type="radio" name="q46" value="B"> B. It enables real-time exchange of cyberthreat indicators between the U.S. Federal Government and the private sector.</label>
+            <label><input type="radio" name="q46" value="C"> C. It is a set of specifications for exchanging cyberthreat information between organizations.</label>
+            <label><input type="radio" name="q46" value="D"> D. It is the specification for an application layer protocol that allows communication of CTI over HTTPS.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q46', ['A'])">Check Answer</button>
+        <div class="result" id="result-q46"></div>
+        <div class="explanation">Explanation: CybOX is a set of open standards and standardized schemas for specifying, capturing, characterizing, and communicating events and properties of network operations that support many cybersecurity functions. </div>
+    </div>
+
+    <!-- Question 47 (To be integrated later) -->
+    <div class="question" id="q47">
+        <h3>Question 47</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 48 -->
+    <div class="question" id="q48">
+        <h3>Question 48</h3>
+        <p>In what two ways can ICMP be a security threat to a company? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q48" value="A"> A. By collecting information about a network</label>
+            <label><input type="checkbox" name="q48" value="B"> B. Corrupting data between email servers and email recipients</label>
+            <label><input type="checkbox" name="q48" value="C"> C. By infiltrating webpages</label>
+            <label><input type="checkbox" name="q48" value="D"> D. Corrupting network IP data packets</label>
+            <label><input type="checkbox" name="q48" value="E"> E. By providing a conduit for DoS attacks</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q48', ['A', 'E'])">Check Answer</button>
+        <div class="result" id="result-q48"></div>
+        <div class="explanation">Explanation: ICMP can be used as a conduit for DoS attacks. It can be used to gather information about a network, such as identifying hosts and network structure, and to determine the operating systems used on the network. </div>
+    </div>
+
+    <!-- Question 49 -->
+    <div class="question" id="q49">
+        <h3>Question 49</h3>
+        <p>Which three fields in the IPv4 header have no equivalent in an IPv6 header? (Choose three.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q49" value="A"> A. Fragment offset</label>
+            <label><input type="checkbox" name="q49" value="B"> B. Protocol</label>
+            <label><input type="checkbox" name="q49" value="C"> C. Flag</label>
+            <label><input type="checkbox" name="q49" value="D"> D. TTL</label>
+            <label><input type="checkbox" name="q49" value="E"> E. Identification</label>
+            <label><input type="checkbox" name="q49" value="F"> F. Version</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q49', ['A', 'C', 'E'])">Check Answer</button>
+        <div class="result" id="result-q49"></div>
+        <div class="explanation">Explanation: Unlike IPv4, IPv6 routers do not perform fragmentation. Therefore, the three fields that support fragmentation in the IPv4 header are eliminated and have no equivalent in the IPv6 header. These three fields are fragment offset, flag, and identification. </div>
+    </div>
+
+    <!-- Question 50 -->
+    <div class="question" id="q50">
+        <h3>Question 50</h3>
+        <p>Which two <code>net</code> commands are associated with network resource sharing? (Choose two.)</p>
+        <div class="options">
+            <label><input type="checkbox" name="q50" value="A"> A. net start</label>
+            <label><input type="checkbox" name="q50" value="B"> B. net accounts</label>
+            <label><input type="checkbox" name="q50" value="C"> C. net share</label>
+            <label><input type="checkbox" name="q50" value="D"> D. net use</label>
+            <label><input type="checkbox" name="q50" value="E"> E. net stop</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q50', ['C', 'D'])">Check Answer</button>
+        <div class="result" id="result-q50"></div>
+        <div class="explanation">Explanation: The <code>net share</code> command creates, deletes, or manages shared resources. The <code>net use</code> command connects, disconnects, and displays information about shared network resources. </div>
+    </div>
+
+    <!-- Question 51 (To be integrated later) -->
+    <div class="question" id="q51">
+        <h3>Question 51</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 52 -->
+    <div class="question" id="q52">
+        <h3>Question 52</h3>
+        <p>What PDU format is used when bits are received from the network medium by the NIC of a host?</p>
+        <div class="options">
+            <label><input type="radio" name="q52" value="A"> A. Segment</label>
+            <label><input type="radio" name="q52" value="B"> B. File</label>
+            <label><input type="radio" name="q52" value="C"> C. Packet</label>
+            <label><input type="radio" name="q52" value="D"> D. Frame</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q52', ['D'])">Check Answer</button>
+        <div class="result" id="result-q52"></div>
+        <div class="explanation">Explanation: When received at the physical layer of a host, bits are formatted into a frame at the data link layer. </div>
+    </div>
+
+    <!-- Question 53 -->
+    <div class="question" id="q53">
+        <h3>Question 53</h3>
+        <p>A user is executing a <code>tracert</code> to a remote device. At what point will a router, which is in the path to the destination device, stop forwarding the packet?</p>
+        <div class="options">
+            <label><input type="radio" name="q53" value="A"> A. When the router receives an ICMP Time Exceeded message</label>
+            <label><input type="radio" name="q53" value="B"> B. When the values of Echo Request and Echo Reply messages reach zero</label>
+            <label><input type="radio" name="q53" value="C"> C. When the RTT value reaches zero</label>
+            <label><input type="radio" name="q53" value="D"> D. When the value in the TTL (Time to Live) field reaches zero</label>
+            <label><input type="radio" name="q53" value="E"> E. When the host responds with an ICMP Echo Reply message</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q53', ['D'])">Check Answer</button>
+        <div class="result" id="result-q53"></div>
+        <div class="explanation">Explanation: When a router receives a traceroute packet, the value in the TTL field is decremented by 1. When the value in the field reaches zero, the receiving router will not forward the packet and will send an ICMP Time Exceeded message back to the source. </div>
+    </div>
+
+    <!-- Question 54 (To be integrated later) -->
+    <div class="question" id="q54">
+        <h3>Question 54</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 55 -->
+    <div class="question" id="q55">
+        <h3>Question 55</h3>
+        <p>For what purpose would a network administrator use the Nmap tool?</p>
+        <div class="options">
+            <label><input type="radio" name="q55" value="A"> A. Protecting the private IP addresses of internal hosts</label>
+            <label><input type="radio" name="q55" value="B"> B. Identifying specific network anomalies</label>
+            <label><input type="radio" name="q55" value="C"> C. Collecting and analyzing security alerts and logs</label>
+            <label><input type="radio" name="q55" value="D"> D. Detection and identification of open ports</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q55', ['D'])">Check Answer</button>
+        <div class="result" id="result-q55"></div>
+        <div class="explanation">Explanation: Nmap allows an administrator to perform port scanning to probe computers and the network for open ports. This helps the administrator verify that network security policies are in place. </div>
+    </div>
+
+    <!-- Question 56 (To be integrated later) -->
+    <div class="question" id="q56">
+        <h3>Question 56</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 58 (To be integrated later) -->
+    <div class="question" id="q58">
+        <h3>Question 58</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 59 (To be integrated later) -->
+    <div class="question" id="q59">
+        <h3>Question 59</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 60 -->
+    <div class="question" id="q60">
+        <h3>Question 60</h3>
+        <p>What network attack seeks to create a DoS for clients by preventing them from obtaining a DHCP lease?</p>
+        <div class="options">
+            <label><input type="radio" name="q60" value="A"> A. DHCP starvation</label>
+            <label><input type="radio" name="q60" value="B"> B. IP address spoofing</label>
+            <label><input type="radio" name="q60" value="C"> C. DHCP spoofing</label>
+            <label><input type="radio" name="q60" value="D"> D. CAM table attack</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q60', ['A'])">Check Answer</button>
+        <div class="result" id="result-q60"></div>
+        <div class="explanation">Explanation: DHCP starvation attacks are launched by an attacker with the intent to create a DoS for DHCP clients. To achieve this goal, the attacker uses a tool that sends many DHCPDISCOVER messages to lease the entire pool of available IP addresses, thus denying them to legitimate hosts. </div>
+    </div>
+
+    <!-- Question 61 (To be integrated later) -->
+    <div class="question" id="q61">
+        <h3>Question 61</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 62 -->
+    <div class="question" id="q62">
+        <h3>Question 62</h3>
+        <p>A company has a file server that shares a folder named “Public.” The network security policy specifies that the “Public” folder is assigned read-only rights to anyone who can log into the server, while editing rights are assigned only to the network administrators group. What component is addressed in the AAA network service framework?</p>
+        <div class="options">
+            <label><input type="radio" name="q62" value="A"> A. Automation</label>
+            <label><input type="radio" name="q62" value="B"> B. Authentication</label>
+            <label><input type="radio" name="q62" value="C"> C. Authorization</label>
+            <label><input type="radio" name="q62" value="D"> D. Accounting</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q62', ['C'])">Check Answer</button>
+        <div class="result" id="result-q62"></div>
+        <div class="explanation">Explanation: After a user successfully authenticates (logs into the server), authorization is the process of determining which network resources the user can access and what operations (such as read or edit) the user can perform. </div>
+    </div>
+
+    <!-- Question 63 (To be integrated later) -->
+    <div class="question" id="q63">
+        <h3>Question 63</h3>
+        <p>(This question will be integrated later)</p>
+    </div>
+
+    <!-- Question 64 -->
+    <div class="question" id="q64">
+        <h3>Question 64</h3>
+        <p>A person visiting a coffee shop for the first time wants to gain wireless Internet access using a laptop. What is the first step the wireless client will take to communicate over the network using a wireless management frame?</p>
+        <div class="options">
+            <label><input type="radio" name="q64" value="A"> A. Associate with the AP</label>
+            <label><input type="radio" name="q64" value="B"> B. Authenticate with the AP</label>
+            <label><input type="radio" name="q64" value="C"> C. Discover the AP</label>
+            <label><input type="radio" name="q64" value="D"> D. Agree with the AP on the payload</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q64', ['C'])">Check Answer</button>
+        <div class="result" id="result-q64"></div>
+        <div class="explanation">Explanation: For wireless devices to communicate over a wireless network, management frames are used to complete a three-stage process: Discover the AP, Authenticate with the AP, Associate with the AP. </div>
+    </div>
+
+    <!-- Question 65 -->
+    <div class="question" id="q65">
+        <h3>Question 65</h3>
+        <p>A device has been assigned the IPv6 address of 2001:0db8:cafe:4500:1000:00d8:0058:00ab/64. What is the network identifier of the device?</p>
+        <div class="options">
+            <label><input type="radio" name="q65" value="A"> A. 2001:0db8:cafe:4500:1000</label>
+            <label><input type="radio" name="q65" value="B"> B. 2001:0db8:cafe:4500:1000:00d8:0058:00ab</label>
+            <label><input type="radio" name="q65" value="C"> C. 1000:00d8:0058:00ab</label>
+            <label><input type="radio" name="q65" value="D"> D. 2001:0db8:cafe:4500</label>
+            <label><input type="radio" name="q65" value="E"> E. 2001</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q65', ['D'])">Check Answer</button>
+        <div class="result" id="result-q65"></div>
+        <div class="explanation">Explanation: The address has a prefix length of /64. Therefore, the first 64 bits represent the network portion, while the last 64 bits represent the host portion of the IPv6 address. </div>
+    </div>
+
+    <!-- Question 66 -->
+    <div class="question" id="q66">
+        <h3>Question 66</h3>
+        <p>An administrator wants to create four subnets from the network address 192.168.1.0/24. What is the network address and subnet mask of the second usable subnet?</p>
+        <div class="options">
+            <label><input type="radio" name="q66" value="A"> A. Subnetwork 192.168.1.64, subnet mask 255.255.255.192</label>
+            <label><input type="radio" name="q66" value="B"> B. Subnetwork 192.168.1.64, subnet mask 255.255.255.240</label>
+            <label><input type="radio" name="q66" value="C"> C. Subnetwork 192.168.1.32, subnet mask 255.255.255.240</label>
+            <label><input type="radio" name="q66" value="D"> D. Subnetwork 192.168.1.128, subnet mask 255.255.255.192</label>
+            <label><input type="radio" name="q66" value="E"> E. Subnetwork 192.168.1.8, subnet mask 255.255.255.224</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q66', ['A'])">Check Answer</button>
+        <div class="result" id="result-q66"></div>
+        <div class="explanation">Explanation: The number of bits borrowed would be two, resulting in a total of 4 usable subnets: 192.168.1.0, 192.168.1.64, 192.168.1.128, 192.168.1.192. Because 2 bits are borrowed, the new subnet mask would be /26 or 255.255.255.192. </div>
+    </div>
+    <div class="question" id="q67">
+        <h3>Question 67</h3>
+        <p>What term describes a set of software tools designed to increase the privileges of a user or to grant access to the user to portions of the operating system that should not normally be allowed?</p>
+        <div class="options">
+            <label><input type="radio" name="q67" value="A"> A. compiler</label>
+            <label><input type="radio" name="q67" value="B"> B. rootkit</label>
+            <label><input type="radio" name="q67" value="C"> C. package manager</label>
+            <label><input type="radio" name="q67" value="D"> D. penetration testing</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q67', ['B'])">Check Answer</button>
+        <div class="result" id="result-q67"></div>
+        <div class="explanation">Explanation: Un rootkit es utilizado por un atacante para asegurar una puerta trasera en una computadora comprometida, otorgar acceso a partes del sistema operativo que normalmente no están permitidas, o aumentar los privilegios de un usuario.</div>
+    </div>
+    <div class="question" id="q68">
+        <h3>Question 68 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q88">
+        <h3>Question 88</h3>
+        <p>What are two evasion techniques that are used by hackers?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q88" value="A"> A. Trojan horse</label>
+            <label><input type="checkbox" name="q88" value="B"> B. pivot</label>
+            <label><input type="checkbox" name="q88" value="C"> C. rootkit</label>
+            <label><input type="checkbox" name="q88" value="D"> D. reconnaissance</label>
+            <label><input type="checkbox" name="q88" value="E"> E. phishing</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q88', ['B', 'C'])">Check Answer</button>
+        <div class="result" id="result-q88"></div>
+        <div class="explanation">Explanation: Los métodos utilizados por los hackers para evitar la detección incluyen pivot, que utiliza un dispositivo comprometido para obtener acceso a otro, y rootkit, que permite al hacker permanecer sin ser detectado y oculta el software.</div>
+    </div>
+    <div class="question" id="q89">
+        <h3>Question 89</h3>
+        <p>When a security attack has occurred, which two approaches should security professionals take to mitigate a compromised system during the Actions on Objectives step as defined by the Cyber Kill Chain model?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q89" value="A"> A. Perform forensic analysis of endpoints for rapid triage.</label>
+            <label><input type="checkbox" name="q89" value="B"> B. Train web developers for securing code.</label>
+            <label><input type="checkbox" name="q89" value="C"> C. Build detections for the behavior of known malware.</label>
+            <label><input type="checkbox" name="q89" value="D"> D. Collect malware files and metadata for future analysis.</label>
+            <label><input type="checkbox" name="q89" value="E"> E. Detect data exfiltration, lateral movement, and unauthorized credential usage.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q89', ['A', 'E'])">Check Answer</button>
+        <div class="result" id="result-q89"></div>
+        <div class="explanation">Explanation: Cuando los sistemas están comprometidos, se debe realizar un análisis forense de los puntos finales para un triage rápido, y se deben mejorar los esfuerzos de detección de actividades de ataque para reducir el daño al mínimo.</div>
+    </div>
+    <div class="question" id="q90">
+        <h3>Question 90 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q96">
+        <h3>Question 96</h3>
+        <p>What are two characteristics of the SLAAC method for IPv6 address configuration?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q96" value="A"> A. The default gateway of an IPv6 client on a LAN will be the link-local address of the router interface attached to the LAN.</label>
+            <label><input type="checkbox" name="q96" value="B"> B. This stateful method of acquiring an IPv6 address requires at least one DHCPv6 server.</label>
+            <label><input type="checkbox" name="q96" value="C"> C. Clients send router advertisement messages to routers to request IPv6 addressing.</label>
+            <label><input type="checkbox" name="q96" value="D"> D. IPv6 addressing is dynamically assigned to clients through the use of ICMPv6.</label>
+            <label><input type="checkbox" name="q96" value="E"> E. Router solicitation messages are sent by the router to offer IPv6 addressing to clients.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q96', ['A', 'D'])">Check Answer</button>
+        <div class="result" id="result-q96"></div>
+        <div class="explanation">Explanation: Con SLAAC, el gateway predeterminado es la dirección link-local de la interfaz del router. La asignación dinámica de direcciones IPv6 se realiza a través del protocolo ICMPv6.</div>
+    </div>
+    <div class="question" id="q97">
+        <h3>Question 97</h3>
+        <p>A technician notices that an application is not responding to commands and that the computer seems to respond slowly when applications are opened. What is the best administrative tool to force the release of system resources from the unresponsive application?</p>
+        <div class="options">
+            <label><input type="radio" name="q97" value="A"> A. Event Viewer</label>
+            <label><input type="radio" name="q97" value="B"> B. System Restore</label>
+            <label><input type="radio" name="q97" value="C"> C. Add or Remove Programs</label>
+            <label><input type="radio" name="q97" value="D"> D. Task Manager</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q97', ['D'])">Check Answer</button>
+        <div class="result" id="result-q97"></div>
+        <div class="explanation">Explanation: El Administrador de Tareas se utiliza para detener una aplicación que no responde.</div>
+    </div>
+    <div class="question" id="q98">
+        <h3>Question 98</h3>
+        <p>How can statistical data be used to describe or predict network behavior?</p>
+        <div class="options">
+            <label><input type="radio" name="q98" value="A"> A. by comparing normal network behavior to current network behavior</label>
+            <label><input type="radio" name="q98" value="B"> B. by recording conversations between network endpoints</label>
+            <label><input type="radio" name="q98" value="C"> C. by listing results of user web surfing activities</label>
+            <label><input type="radio" name="q98" value="D"> D. by displaying alert messages that are generated by Snort</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q98', ['A'])">Check Answer</button>
+        <div class="result" id="result-q98"></div>
+        <div class="explanation">Explanation: Los datos estadísticos del comportamiento normal de la red pueden compararse con el tráfico de red actual para detectar anomalías.</div>
+    </div>
+    <div class="question" id="q99">
+        <h3>Question 99</h3>
+        <p>Which metric in the CVSS Base Metric Group is used with an attack vector?</p>
+        <div class="options">
+            <label><input type="radio" name="q99" value="A"> A. the proximity of the threat actor to the vulnerability</label>
+            <label><input type="radio" name="q99" value="B"> B. the presence or absence of the requirement for user interaction in order for an exploit to be successful</label>
+            <label><input type="radio" name="q99" value="C"> C. the determination whether the initial authority changes to a second authority during the exploit</label>
+            <label><input type="radio" name="q99" value="D"> D. the number of components, software, hardware, or networks, that are beyond the control of the attacker and that must be present in order for a vulnerability to be successfully exploited</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q99', ['A'])">Check Answer</button>
+        <div class="result" id="result-q99"></div>
+        <div class="explanation">Explanation: Esta métrica refleja la proximidad del actor de la amenaza al componente vulnerable.</div>
+    </div>
+    <div class="question" id="q100">
+        <h3>Question 100</h3>
+        <p>Which NIST Cybersecurity Framework core function is concerned with the development and implementation of safeguards that ensure the delivery of critical infrastructure services?</p>
+        <div class="options">
+            <label><input type="radio" name="q100" value="A"> A. respond</label>
+            <label><input type="radio" name="q100" value="B"> B. detect</label>
+            <label><input type="radio" name="q100" value="C"> C. identify</label>
+            <label><input type="radio" name="q100" value="D"> D. recover</label>
+            <label><input type="radio" name="q100" value="E"> E. protect</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q100', ['E'])">Check Answer</button>
+        <div class="result" id="result-q100"></div>
+        <div class="explanation">Explanation: La función de 'Proteger' en el marco del NIST se enfoca en la implementación de salvaguardas para asegurar los servicios de infraestructura crítica.</div>
+    </div>
+    <div class="question" id="q101">
+        <h3>Question 101</h3>
+        <p>Which two techniques are used in a smurf attack?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q101" value="A"> A. session hijacking</label>
+            <label><input type="checkbox" name="q101" value="B"> B. resource exhaustion</label>
+            <label><input type="checkbox" name="q101" value="C"> C. botnets</label>
+            <label><input type="checkbox" name="q101" value="D"> D. amplification</label>
+            <label><input type="checkbox" name="q101" value="E"> E. reflection</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q101', ['D', 'E'])">Check Answer</button>
+        <div class="result" id="result-q101"></div>
+        <div class="explanation">Explanation: Un ataque 'smurf' utiliza técnicas de amplificación y reflexión para abrumar a un host objetivo.</div>
+    </div>
+    <div class="question" id="q102">
+        <h3>Question 102</h3>
+        <p>What is the primary objective of a threat intelligence platform (TIP)?</p>
+        <div class="options">
+            <label><input type="radio" name="q102" value="A"> A. to aggregate the data in one place and present it in a comprehensible and usable format</label>
+            <label><input type="radio" name="q102" value="B"> B. to provide a specification for an application layer protocol that allows the communication of CTI over HTTPS</label>
+            <label><input type="radio" name="q102" value="C"> C. to provide a standardized schema for specifying, capturing, characterizing, and communicating events and properties of network operations</label>
+            <label><input type="radio" name="q102" value="D"> D. to provide a security operations platform that integrates and enhances diverse security tools and threat intelligence</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q102', ['A'])">Check Answer</button>
+        <div class="result" id="result-q102"></div>
+        <div class="explanation">Explanation: Una plataforma de inteligencia de amenazas (TIP) está diseñada para agregar datos en un solo lugar y presentarlos en un formato comprensible y utilizable.</div>
+    </div>
+    <div class="question" id="q103">
+        <h3>Question 103</h3>
+        <p>Which wireless parameter is used by an access point to broadcast frames that include the SSID?</p>
+        <div class="options">
+            <label><input type="radio" name="q103" value="A"> A. security mode</label>
+            <label><input type="radio" name="q103" value="B"> B. active mode</label>
+            <label><input type="radio" name="q103" value="C"> C. passive mode</label>
+            <label><input type="radio" name="q103" value="D"> D. channel setting</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q103', ['C'])">Check Answer</button>
+        <div class="result" id="result-q103"></div>
+        <div class="explanation">Explanation: En el modo pasivo, el punto de acceso anuncia el SSID en tramas de baliza de difusión.</div>
+    </div>
+    <div class="question" id="q104">
+        <h3>Question 104 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q105">
+        <h3>Question 105</h3>
+        <p>An employee connects wirelessly to the company network using a cell phone. The employee then configures the cell phone to act as a wireless access point that will allow new employees to connect to the company network. Which type of security threat best describes this situation?</p>
+        <div class="options">
+            <label><input type="radio" name="q105" value="A"> A. rogue access point</label>
+            <label><input type="radio" name="q105" value="B"> B. cracking</label>
+            <label><input type="radio" name="q105" value="C"> C. denial of service</label>
+            <label><input type="radio" name="q105" value="D"> D. spoofing</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q105', ['A'])">Check Answer</button>
+        <div class="result" id="result-q105"></div>
+        <div class="explanation">Explanation: Configurar un teléfono móvil para que actúe como un punto de acceso inalámbrico significa que ahora es un punto de acceso no autorizado, ya que permite que un usuario acceda a la red sin pasar por el punto de acceso de la empresa.</div>
+    </div>
+    <div class="question" id="q106">
+        <h3>Question 106</h3>
+        <p>What information is required for a WHOIS query?</p>
+        <div class="options">
+            <label><input type="radio" name="q106" value="A"> A. outside global address of the client</label>
+            <label><input type="radio" name="q106" value="B"> B. ICANN lookup server address</label>
+            <label><input type="radio" name="q106" value="C"> C. link-local address of the domain owner</label>
+            <label><input type="radio" name="q106" value="D"> D. FQDN of the domain</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q106', ['D'])">Check Answer</button>
+        <div class="result" id="result-q106"></div>
+        <div class="explanation">Explanation: Las consultas WHOIS se utilizan para obtener información de registro de un dominio, por lo que se requiere el nombre de dominio completo (FQDN).</div>
+    </div>
+    <div class="question" id="q107">
+        <h3>Question 107</h3>
+        <p>Which two statements describe the characteristics of symmetric algorithms?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q107" value="A"> A. They are referred to as a pre-shared key or secret key.</label>
+            <label><input type="checkbox" name="q107" value="B"> B. They use a pair of a public key and a private key.</label>
+            <label><input type="checkbox" name="q107" value="C"> C. They are commonly used with VPN traffic.</label>
+            <label><input type="checkbox" name="q107" value="D"> D. They provide confidentiality, integrity, and nonrepudiation.</label>
+            <label><input type="checkbox" name="q107" value="E"> E. They are always slower than asymmetric algorithms.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q107', ['A', 'C'])">Check Answer</button>
+        <div class="result" id="result-q107"></div>
+        <div class="explanation">Explanation: Los algoritmos simétricos se conocen como clave pre-compartida o clave secreta, y se utilizan comúnmente con el tráfico VPN.</div>
+    </div>
+    <div class="question" id="q126">
+        <h3>Question 126</h3>
+        <p>For network systems, which management system addresses the inventory and control of hardware and software configurations?</p>
+        <div class="options">
+            <label><input type="radio" name="q126" value="A"> A. asset management</label>
+            <label><input type="radio" name="q126" value="B"> B. vulnerability management</label>
+            <label><input type="radio" name="q126" value="C"> C. risk management</label>
+            <label><input type="radio" name="q126" value="D"> D. configuration management</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q126', ['D'])">Check Answer</button>
+        <div class="result" id="result-q126"></div>
+        <div class="explanation">Explanation: La gestión de la configuración aborda el inventario y el control de las configuraciones de hardware y software de los sistemas de red.</div>
+    </div>
+    <div class="question" id="q127">
+        <h3>Question 127 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q128">
+        <h3>Question 128</h3>
+        <p>What are the three core functions provided by the Security Onion?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q128" value="A"> A. business continuity planning</label>
+            <label><input type="checkbox" name="q128" value="B"> B. full packet capture</label>
+            <label><input type="checkbox" name="q128" value="C"> C. alert analysis</label>
+            <label><input type="checkbox" name="q128" value="D"> D. intrusion detection</label>
+            <label><input type="checkbox" name="q128" value="E"> E. security device management</label>
+            <label><input type="checkbox" name="q128" value="F"> F. threat containment</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q128', ['B', 'C', 'D'])">Check Answer</button>
+        <div class="result" id="result-q128"></div>
+        <div class="explanation">Explanation: Security Onion proporciona captura completa de paquetes, sistemas de detección de intrusiones y herramientas de análisis de alertas.</div>
+    </div>
+    <div class="question" id="q129">
+        <h3>Question 129</h3>
+        <p>In NAT terms, what address type refers to the globally routable IPv4 address of a destination host on the Internet?</p>
+        <div class="options">
+            <label><input type="radio" name="q129" value="A"> A. outside global</label>
+            <label><input type="radio" name="q129" value="B"> B. inside global</label>
+            <label><input type="radio" name="q129" value="C"> C. outside local</label>
+            <label><input type="radio" name="q129" value="D"> D. inside local</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q129', ['A'])">Check Answer</button>
+        <div class="result" id="result-q129"></div>
+        <div class="explanation">Explanation: Desde la perspectiva de un dispositivo NAT, las direcciones 'outside global' son las direcciones de los destinos en la red externa.</div>
+    </div>
+    <div class="question" id="q130">
+        <h3>Question 130</h3>
+        <p>Which two fields or features does Ethernet examine to determine if a received frame is passed to the data link layer or discarded by the NIC?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q130" value="A"> A. CEF</label>
+            <label><input type="checkbox" name="q130" value="B"> B. source MAC address</label>
+            <label><input type="checkbox" name="q130" value="C"> C. minimum frame size</label>
+            <label><input type="checkbox" name="q130" value="D"> D. auto-MDIX</label>
+            <label><input type="checkbox" name="q130" value="E"> E. Frame Check Sequence</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q130', ['C', 'E'])">Check Answer</button>
+        <div class="result" id="result-q130"></div>
+        <div class="explanation">Explanation: Un frame de Ethernet se descarta si es más pequeño que el tamaño mínimo (64 bytes) o si el valor calculado de la secuencia de verificación de trama (FCS) no coincide con el valor recibido.</div>
+    </div>
+    <div class="question" id="q131">
+        <h3>Question 131</h3>
+        <p>Which type of data would be considered an example of volatile data?</p>
+        <div class="options">
+            <label><input type="radio" name="q131" value="A"> A. web browser cache</label>
+            <label><input type="radio" name="q131" value="B"> B. memory registers</label>
+            <label><input type="radio" name="q131" value="C"> C. log files</label>
+            <label><input type="radio" name="q131" value="D"> D. temp files</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q131', ['B'])">Check Answer</button>
+        <div class="result" id="result-q131"></div>
+        <div class="explanation">Explanation: Los datos volátiles se almacenan en la memoria, como registros, caché y RAM, y se pierden cuando la computadora pierde energía.</div>
+    </div>
+    <div class="question" id="q132">
+        <h3>Question 132</h3>
+        <p>What is the main purpose of exploitations by a threat actor through the weapon delivered to a target during the Cyber Kill Chain exploitation phase?</p>
+        <div class="options">
+            <label><input type="radio" name="q132" value="A"> A. Launch a DoS attack.</label>
+            <label><input type="radio" name="q132" value="B"> B. Send a message back to a CnC controlled by the threat actor.</label>
+            <label><input type="radio" name="q132" value="C"> C. Break the vulnerability and gain control of the target.</label>
+            <label><input type="radio" name="q132" value="D"> D. Establish a back door into the system.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q132', ['C'])">Check Answer</button>
+        <div class="result" id="result-q132"></div>
+        <div class="explanation">Explanation: Después de entregar el arma, el actor de la amenaza la utiliza para romper la vulnerabilidad y obtener el control del objetivo.</div>
+    </div>
+    <div class="question" id="q133">
+        <h3>Question 133 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q134">
+        <h3>Question 134</h3>
+        <p>What three security tools does Cisco Talos maintain security incident detection rule sets for?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q134" value="A"> A. Snort</label>
+            <label><input type="checkbox" name="q134" value="B"> B. NetStumbler</label>
+            <label><input type="checkbox" name="q134" value="C"> C. Socat</label>
+            <label><input type="checkbox" name="q134" value="D"> D. SpamCop</label>
+            <label><input type="checkbox" name="q134" value="E"> E. ClamAV</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q134', ['A', 'D', 'E'])">Check Answer</button>
+        <div class="result" id="result-q134"></div>
+        <div class="explanation">Explanation: Cisco Talos mantiene los conjuntos de reglas de detección de incidentes de seguridad para las herramientas de seguridad de red Snort.org, ClamAV y SpamCop.</div>
+    </div>
+    <div class="question" id="q135">
+        <h3>Question 135</h3>
+        <p>Which host-based firewall uses a three-profile approach to configure the firewall functionality?</p>
+        <div class="options">
+            <label><input type="radio" name="q135" value="A"> A. Windows Firewall</label>
+            <label><input type="radio" name="q135" value="B"> B. iptables</label>
+            <label><input type="radio" name="q135" value="C"> C. TCP Wrapper</label>
+            <label><input type="radio" name="q135" value="D"> D. nftables</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q135', ['A'])">Check Answer</button>
+        <div class="result" id="result-q135"></div>
+        <div class="explanation">Explanation: Windows Firewall utiliza un enfoque basado en perfiles para configurar la funcionalidad del firewall. Utiliza tres perfiles: Público, Privado y Dominio.</div>
+    </div>
+    <div class="question" id="q136">
+        <h3>Question 136</h3>
+        <p>When a user visits an online store website that uses HTTPS, the user browser queries the CA for a CRL. What is the purpose of this query?</p>
+        <div class="options">
+            <label><input type="radio" name="q136" value="A"> A. to verify the validity of the digital certificate</label>
+            <label><input type="radio" name="q136" value="B"> B. to request the CA self-signed digital certificate</label>
+            <label><input type="radio" name="q136" value="C"> C. to check the length of key used for the digital certificate</label>
+            <label><input type="radio" name="q136" value="D"> D. to negotiate the best encryption to use</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q136', ['A'])">Check Answer</button>
+        <div class="result" id="result-q136"></div>
+        <div class="explanation">Explanation: Un navegador web consultará una Lista de Revocación de Certificados (CRL) para verificar la validez de un certificado.</div>
+    </div>
+    <div class="question" id="q137">
+        <h3>Question 137</h3>
+        <p>Which step in the Vulnerability Management Life Cycle determines a baseline risk profile to eliminate risks based on asset criticality, vulnerability threat, and asset classification?</p>
+        <div class="options">
+            <label><input type="radio" name="q137" value="A"> A. discover</label>
+            <label><input type="radio" name="q137" value="B"> B. assess</label>
+            <label><input type="radio" name="q137" value="C"> C. prioritize assets</label>
+            <label><input type="radio" name="q137" value="D"> D. verify</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q137', ['B'])">Check Answer</button>
+        <div class="result" id="result-q137"></div>
+        <div class="explanation">Explanation: La fase de 'evaluación' determina un perfil de riesgo base para eliminar riesgos basados en la criticidad de los activos, la amenaza de vulnerabilidad y la clasificación de los activos.</div>
+    </div>
+    <div class="question" id="q138">
+        <h3>Question 138</h3>
+        <p>Which management system implements systems that track the location and configuration of networked devices and software across an enterprise?</p>
+        <div class="options">
+            <label><input type="radio" name="q138" value="A"> A. asset management</label>
+            <label><input type="radio" name="q138" value="B"> B. vulnerability management</label>
+            <label><input type="radio" name="q138" value="C"> C. risk management</label>
+            <label><input type="radio" name="q138" value="D"> D. configuration management</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q138', ['A'])">Check Answer</button>
+        <div class="result" id="result-q138"></div>
+        <div class="explanation">Explanation: La gestión de activos implica la implementación de sistemas que rastrean la ubicación y configuración de dispositivos de red y software en una empresa.</div>
+    </div>
+    <div class="question" id="q139">
+        <h3>Question 139</h3>
+        <p>A network administrator is reviewing server alerts because of reports of network slowness. The administrator confirms that an alert was an actual security incident. What is the security alert classification of this type of scenario?</p>
+        <div class="options">
+            <label><input type="radio" name="q139" value="A"> A. false negative</label>
+            <label><input type="radio" name="q139" value="B"> B. true positive</label>
+            <label><input type="radio" name="q139" value="C"> C. true negative</label>
+            <label><input type="radio" name="q139" value="D"> D. false positive</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q139', ['B'])">Check Answer</button>
+        <div class="result" id="result-q139"></div>
+        <div class="explanation">Explanation: Un "verdadero positivo" es cuando una alerta ha sido verificada como un incidente de seguridad real.</div>
+    </div>
+    <div class="question" id="q140">
+        <h3>Question 140</h3>
+        <p>Which application layer protocol is used to provide file-sharing and print services to Microsoft applications?</p>
+        <div class="options">
+            <label><input type="radio" name="q140" value="A"> A. SMTP</label>
+            <label><input type="radio" name="q140" value="B"> B. HTTP</label>
+            <label><input type="radio" name="q140" value="C"> C. SMB</label>
+            <label><input type="radio" name="q140" value="D"> D. DHCP</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q140', ['C'])">Check Answer</button>
+        <div class="result" id="result-q140"></div>
+        <div class="explanation">Explanation: SMB se utiliza en las redes de Microsoft para servicios de uso compartido de archivos e impresión.</div>
+    </div>
+    <div class="question" id="q141">
+        <h3>Question 141</h3>
+        <p>Which device in a layered defense-in-depth approach denies connections initiated from untrusted networks to internal networks, but allows internal users within an organization to connect to untrusted networks?</p>
+        <div class="options">
+            <label><input type="radio" name="q141" value="A"> A. access layer switch</label>
+            <label><input type="radio" name="q141" value="B"> B. firewall</label>
+            <label><input type="radio" name="q141" value="C"> C. internal router</label>
+            <label><input type="radio" name="q141" value="D"> D. IPS</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q141', ['B'])">Check Answer</button>
+        <div class="result" id="result-q141"></div>
+        <div class="explanation">Explanation: Un firewall generalmente rastrea las conexiones iniciadas dentro de la empresa que salen de la empresa y deniega la iniciación de conexiones de redes externas no confiables que van a redes internas confiables.</div>
+    </div>
+    <div class="question" id="q142">
+        <h3>Question 142</h3>
+        <p>What are two potential network problems that can result from ARP operation?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q142" value="A"> A. Large numbers of ARP request broadcasts could cause the host MAC address table to overflow and prevent the host from communicating on the network.</label>
+            <label><input type="checkbox" name="q142" value="B"> B. On large networks with low bandwidth, multiple ARP broadcasts could cause data communication delays.</label>
+            <label><input type="checkbox" name="q142" value="C"> C. Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent of intercepting network traffic.</label>
+            <label><input type="checkbox" name="q142" value="D"> D. Multiple ARP replies result in the switch MAC address table containing entries that match the MAC addresses of hosts that are connected to the relevant switch port.</label>
+            <label><input type="checkbox" name="q142" value="E"> E. Manually configuring static ARP associations could facilitate ARP poisoning or MAC address spoofing.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q142', ['B', 'C'])">Check Answer</button>
+        <div class="result" id="result-q142"></div>
+        <div class="explanation">Explanation: Un gran número de mensajes de difusión de ARP puede causar retrasos temporales en las comunicaciones de datos. Los atacantes pueden manipular las asignaciones de direcciones MAC e IP en los mensajes ARP para interceptar el tráfico de red.</div>
+    </div>
+    <div class="question" id="q143">
+        <h3>Question 143</h3>
+        <p>Which three procedures in Sguil are provided to security analysts to address alerts?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q143" value="A"> A. Escalate an uncertain alert.</label>
+            <label><input type="checkbox" name="q143" value="B"> B. Correlate similar alerts into a single line.</label>
+            <label><input type="checkbox" name="q143" value="C"> C. Categorize true positives.</label>
+            <label><input type="checkbox" name="q143" value="D"> D. Pivot to other information sources and tools.</label>
+            <label><input type="checkbox" name="q143" value="E"> E. Construct queries using Query Builder.</label>
+            <label><input type="checkbox" name="q143" value="F"> F. Expire false positives.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q143', ['A', 'C', 'F'])">Check Answer</button>
+        <div class="result" id="result-q143"></div>
+        <div class="explanation">Explanation: Sguil permite a los analistas de seguridad expirar las falsas alarmas, escalar una alerta incierta y categorizar los verdaderos positivos.</div>
+    </div>
+    <div class="question" id="q144">
+        <h3>Question 144 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q145">
+        <h3>Question 145</h3>
+        <p>Which two services are provided by the NetFlow tool?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q145" value="A"> A. QoS configuration</label>
+            <label><input type="checkbox" name="q145" value="B"> B. usage-based network billing</label>
+            <label><input type="checkbox" name="q145" value="C"> C. log analysis</label>
+            <label><input type="checkbox" name="q145" value="D"> D. access list monitoring</label>
+            <label><input type="checkbox" name="q145" value="E"> E. network monitoring</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q145', ['B', 'E'])">Check Answer</button>
+        <div class="result" id="result-q145"></div>
+        <div class="explanation">Explanation: NetFlow proporciona servicios como la facturación de red basada en el uso y la supervisión de la red.</div>
+    </div>
+    <div class="question" id="q146">
+        <h3>Question 146</h3>
+        <p>An administrator discovers that a user is accessing a newly established website that may be detrimental to company security. What action should the administrator take first in terms of the security policy?</p>
+        <div class="options">
+            <label><input type="radio" name="q146" value="A"> A. Ask the user to stop immediately and inform the user that this constitutes grounds for dismissal.</label>
+            <label><input type="radio" name="q146" value="B"> B. Create a firewall rule blocking the respective website.</label>
+            <label><input type="radio" name="q146" value="C"> C. Revise the AUP immediately and get all users to sign the updated AUP.</label>
+            <label><input type="radio" name="q146" value="D"> D. Immediately suspend the network privileges of the user.</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q146', ['D'])">Check Answer</button>
+        <div class="result" id="result-q146"></div>
+        <div class="explanation">Explanation: La acción inicial en este escenario es suspender inmediatamente los privilegios de red del usuario para contener la amenaza.</div>
+    </div>
+    <div class="question" id="q147">
+        <h3>Question 147</h3>
+        <p>Which two tasks can be performed by a local DNS server?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q147" value="A"> A. allowing data transfer between two network devices</label>
+            <label><input type="checkbox" name="q147" value="B"> B. retrieving email messages</label>
+            <label><input type="checkbox" name="q147" value="C"> C. providing IP addresses to local hosts</label>
+            <label><input type="checkbox" name="q147" value="D"> D. forwarding name resolution requests between servers</label>
+            <label><input type="checkbox" name="q147" value="E"> E. mapping name-to-IP addresses for internal hosts</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q147', ['D', 'E'])">Check Answer</button>
+        <div class="result" id="result-q147"></div>
+        <div class="explanation">Explanation: Dos funciones importantes de DNS son proporcionar direcciones IP para los nombres de dominio y reenviar solicitudes que no se pueden resolver a otros servidores para proporcionar la traducción de nombres de dominio a direcciones IP.</div>
+    </div>
+    <div class="question" id="q148">
+        <h3>Question 148</h3>
+        <p>Which type of event is logged in Cisco Next-Generation IPS devices (NGIPS) using FirePOWER Services when changes have been detected in the monitored network?</p>
+        <div class="options">
+            <label><input type="radio" name="q148" value="A"> A. intrusion</label>
+            <label><input type="radio" name="q148" value="B"> B. connection</label>
+            <label><input type="radio" name="q148" value="C"> C. host or endpoint</label>
+            <label><input type="radio" name="q148" value="D"> D. network discovery</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q148', ['D'])">Check Answer</button>
+        <div class="result" id="result-q148"></div>
+        <div class="explanation">Explanation: Los eventos de 'descubrimiento de red' en Cisco NGIPS representan los cambios que se han detectado en la red monitoreada.</div>
+    </div>
+    <div class="question" id="q186">
+        <h3>Question 186</h3>
+        <p>Which step in the Vulnerability Management Life Cycle categorizes assets into groups or business units, and assigns a business value to asset groups based on their criticality to business operations?</p>
+        <div class="options">
+            <label><input type="radio" name="q186" value="A"> A. discover</label>
+            <label><input type="radio" name="q186" value="B"> B. assess</label>
+            <label><input type="radio" name="q186" value="C"> C. prioritize assets</label>
+            <label><input type="radio" name="q186" value="D"> D. verify</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q186', ['C'])">Check Answer</button>
+        <div class="result" id="result-q186"></div>
+        <div class="explanation">Explanation: La etapa de 'priorizar activos' categoriza los activos en grupos y les asigna un valor comercial basado en su criticidad para las operaciones comerciales.</div>
+    </div>
+    <div class="question" id="q190">
+        <h3>Question 190</h3>
+        <p>What are two functions that are provided by the network layer?</p>
+        <div class="options">
+            <label><input type="checkbox" name="q190" value="A"> A. directing data packets to destination hosts on other networks</label>
+            <label><input type="checkbox" name="q190" value="B"> B. placing data on the network medium</label>
+            <label><input type="checkbox" name="q190" value="C"> C. carrying data between processes that are running on source and destination hosts</label>
+            <label><input type="checkbox" name="q190" value="D"> D. providing dedicated end-to-end connections</label>
+            <label><input type="checkbox" name="q190" value="E"> E. providing end devices with a unique network identifier</label>
+        </div>
+        <button class="check-button" onclick="checkAnswer('q190', ['A', 'E'])">Check Answer</button>
+        <div class="result" id="result-q190"></div>
+        <div class="explanation">Explanation: La capa de red se encarga principalmente de dirigir los paquetes de datos a hosts de destino en otras redes. Las direcciones IP proporcionan identificadores únicos para los dispositivos finales.</div>
+    </div>
+    <div class="question" id="q191">
+        <h3>Question 191 (Se integrará mas adelante)</h3>
+    </div>
+    <div class="question" id="q192">
+        <h3>Question 192 (Se integrará mas adelante)</h3>
+    </div>
+
+
+    <script>
+        function checkAnswer(questionId, correctAnswers) {
+		const resultElement = document.getElementById(`result-${questionId}`);
+		const explanationElement = document.querySelector(`#${questionId} .explanation`);
+		const inputs = document.getElementsByName(questionId);
+		let selectedAnswers = [];
+    
+		inputs.forEach(input => {
+			if (input.checked) {
+				selectedAnswers.push(input.value);
+			}
+		});
+
+		const isCorrect = selectedAnswers.length === correctAnswers.length && 
+                     selectedAnswers.every(answer => correctAnswers.includes(answer)) &&
+                     correctAnswers.every(answer => selectedAnswers.includes(answer));
+
+		if (isCorrect) {
+			resultElement.textContent = "Correct!";
+			resultElement.style.color = "green";
+		} else {
+			resultElement.textContent = "Incorrect. Please try again.";
+			resultElement.style.color = "red";
+		}
+
+		// Mostrar la explicación
+		explanationElement.style.display = "block";
+}
+    </script>
+</body>
+</html>
